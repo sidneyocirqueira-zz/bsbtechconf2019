@@ -57,8 +57,8 @@ WITH (
 -- Query External Table
 
 SELECT 
-	   [Ano],
-	   [Campeao],
+      [Ano],
+      [Campeao],
       [ViceCampeao]
 FROM [dbo].[extcopaintercontinental]
 
@@ -77,8 +77,8 @@ WITH (
 -- Query External Table
 
 SELECT 
-	   [Ano],
-	   [Campeao],
+      [Ano],
+      [Campeao],
       [ViceCampeao]
 FROM [dbo].[extmundialdeclubes]
 
