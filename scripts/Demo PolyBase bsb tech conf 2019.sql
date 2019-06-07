@@ -1,31 +1,33 @@
-/* DEMO POLYBASE AZURE CONFERENCE 2019 */
+/* DEMO POLYBASE BSB TECH CONF 2019 */
 
 -- 1: Create a master key on the database.  -- Required to encrypt the credential secret.  
 
-CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'AZURECONFERENCE*2019';  
+CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'BSBTECHCONF*2019';  
 
--- Create a database scoped credential  for Azure blob storage.  
+-- 2: Create a database scoped credential  for Azure blob storage.  
 -- IDENTITY: any string (this is not used for authentication to Azure storage).  
 -- SECRET: your Azure storage account key.  
 
-CREATE DATABASE SCOPED CREDENTIAL AzureConferenceCredential   
-WITH IDENTITY = 'stgazureconference', 
+CREATE DATABASE SCOPED CREDENTIAL BsbTechConfCredential   
+WITH IDENTITY = 'stgbsbtechconf', 
 Secret = '0SnfCF6fwzcLrnaCwUsnVQqt2BWXJCZ0oebpyRz1Jwm4SydwyO45yLh6KNhm/ATigl90ZuNOZ5TWynCe9J3nbg==';  
+
+-- Query Credential 
 
 select * from sys.database_credentials
 
--- 2:  Create an external data source.  
+-- 3:  Create an external data source.  
 -- LOCATION:  Azure account storage account name and blob container name.  
 -- CREDENTIAL: The database scoped credential created above.  
 
-CREATE EXTERNAL DATA SOURCE AzureConference 
+CREATE EXTERNAL DATA SOURCE BsbTechConf
 with (          
 	TYPE = HADOOP, 
 	-- 
-	LOCATION ='wasbs://azureconference@stgazureconference.blob.core.windows.net',  -- storage container@storageaccount         
-	CREDENTIAL = AzureConferenceCredential);  
+	LOCATION ='wasbs://bsbtechconf@stgbsbtechconf.blob.core.windows.net',  -- storage container@storageaccount         
+	CREDENTIAL = BsbTechConfCredential);  
 
--- 3:  Create an external file format.  
+-- 4:  Create an external file format.  
 
 -- FORMAT TYPE: Type of format in Hadoop (DELIMITEDTEXT,  RCFILE, ORC, PARQUET).  
 
@@ -35,7 +37,7 @@ WITH (         FORMAT_TYPE = DELIMITEDTEXT,
 			   (         FIELD_TERMINATOR =',',            
 			   USE_TYPE_DEFAULT = TRUE       ) );
 
--- 4:  Create an external table.  
+-- 5:  Create an external table.  
 
 -- The external table points to data stored in Azure storage.  
 -- LOCATION: path to a file or directory that contains the data (relative to the blob container). 
@@ -49,8 +51,10 @@ CREATE EXTERNAL TABLE dbo.extcopaintercontinental (
 )
 WITH (
 	LOCATION='/Copa_Intercontinental.csv',
-	DATA_SOURCE=AzureConference, FILE_FORMAT=CsvFileFormat
+	DATA_SOURCE= BsbTechConf, FILE_FORMAT=CsvFileFormat
 );
+
+-- Query External Table
 
 SELECT 
 	   [Ano],
@@ -66,8 +70,11 @@ CREATE EXTERNAL TABLE dbo.extmundialdeclubes (
 )
 WITH (
 	LOCATION='/Mundial_de_clubes.csv',
-	DATA_SOURCE=AzureConference, FILE_FORMAT=CsvFileFormat
+	DATA_SOURCE=BsbTechConf, FILE_FORMAT=CsvFileFormat
 );
+
+
+-- Query External Table
 
 SELECT 
 	   [Ano],
@@ -95,22 +102,19 @@ WITH (
 SELECT *  
 FROM [dbo].[extmundialdeclubes];
 
+-- Query table
 
 SELECT count(*)  
 FROM [dbo].[copaintercontinental]
 
 
-
-
--- rebuild index
-
--- criar estatisticas
+-- Clean Demo
 
 DROP EXTERNAL TABLE  [dbo].[extcopaintercontinental]
 DROP EXTERNAL TABLE  [dbo].[extmundialdeclubes]
 
 DROP TABLE  [dbo].[extcopaintercontinental]
-DROP TABLE	[dbo].[extmundialdeclubes]
+DROP TABLE  [dbo].[extmundialdeclubes]
 
 /* New catalog views */
 
