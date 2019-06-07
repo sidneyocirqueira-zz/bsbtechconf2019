@@ -3,7 +3,7 @@
 Demo realizada no evento  [Brasilia Tech Conf 2019](https://www.meetup.com/pt-BR/DevelopersBR/events/261655102/)
 
 
-![IMG](https://github.com/sidneyocirqueira/brasiliatechconf2019/blob/master/img/techconf.jpeg)
+![IMG](https://github.com/sidneyocirqueira/bsbtechconf2019/blob/master/img/techconf.jpeg)
 
 ## Sumário
 * [Palestra](#palestra)
