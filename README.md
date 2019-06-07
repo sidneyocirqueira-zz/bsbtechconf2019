@@ -33,8 +33,13 @@ Instruções para execução da demo:
 ## Carga dados com [Polybase](https://docs.microsoft.com/en-us/sql/relational-databases/polybase/polybase-guide?view=sql-server-2017)
 
 ## Referências 
-* Microsoft Learn: https://docs.microsoft.com/en-us/learn/
+* Criar conta gratuita https://azure.microsoft.com/en-us/free/
+* Treinamento Azure SQLDW: https://docs.microsoft.com/en-us/learn/paths/implement-sql-data-warehouse/
 * Azure SQL Data Warehouse: https://docs.microsoft.com/en-in/azure/sql-data-warehouse/
-* Datafactory: https://docs.microsoft.com/en-us/azure/data-factory/
+* Arquitetura MPP: https://docs.microsoft.com/en-us/azure/sql-data-warehouse/massively-parallel-processing-mpp-architecture
+* Documentação Polybase: https://docs.microsoft.com/en-us/sql/relational-databases/polybase/polybase-guide?view=sql-server-2017
+* Documentação Datafactory: https://docs.microsoft.com/en-us/azure/data-factory/
+* Forum Datafactory: https://feedback.azure.com/forums/270578-data-factory
+
  
 
