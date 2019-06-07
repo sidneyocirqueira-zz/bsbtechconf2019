@@ -30,7 +30,7 @@ Instruções para execução da demo:
 * Provisionar Ambiente Datafactory via [ARM Template](https://github.com/sidneyocirqueira/agb2019-uberlandia-devops-sqldb/tree/master/arm) com Power Shell
 * Provisionar VM SQL Server via [ARM Template](https://github.com/sidneyocirqueira/agb2019-uberlandia-devops-sqldb/tree/master/arm) com Power Shell;
 
-## Carga dados com [Polybase](https://docs.microsoft.com/en-us/sql/relational-databases/polybase/polybase-guide?view=sql-server-2017)
+## Carga dados com Polybase
 
 ## Referências 
 * Criar conta gratuita https://azure.microsoft.com/en-us/free/
