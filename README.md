@@ -14,7 +14,7 @@ Demo realizada no evento  [Brasilia Tech Conf 2019](https://www.meetup.com/pt-BR
 * [Referências](#referencias)
 
 ## Palestra
-* Carregue seus dados para o SQL Data Warehouse com DataFactory e PolyBase
+* Carregue seus dados para o SQL Data Warehouse com DataFactory e PolyBase:
 [bsbtechconf.pdf](https://github.com/sidneyocirqueira/bsbtechconf2019/blob/master/pdf/bsbtechconf.pdf)
 
 ## Integrantes
