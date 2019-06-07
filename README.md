@@ -15,7 +15,7 @@ Demo realizada no evento  [Brasilia Tech Conf 2019](https://www.meetup.com/pt-BR
 
 ## Palestra
 * Carregue seus dados para o SQL Data Warehouse com DataFactory e PolyBase 
-[bsbtechconf.pdf]()
+[bsbtechconf.pdf](https://github.com/sidneyocirqueira/bsbtechconf2019/blob/master/pdf/bsbtechconf.pdf)
 
 ## Integrantes
 1. [Raiane Flores](https://www.linkedin.com/in/raiane-flores-borba-lins-07567463/) 
@@ -31,6 +31,7 @@ Instruções para execução da demo:
 * Provisionar VM SQL Server via [ARM Template](https://github.com/sidneyocirqueira/agb2019-uberlandia-devops-sqldb/tree/master/arm) com Power Shell;
 
 ## Carga dados com Polybase
+* [Demo PolyBase bsb tech conf 2019.sql](https://github.com/sidneyocirqueira/bsbtechconf2019/blob/master/scripts/Demo%20PolyBase%20bsb%20tech%20conf%202019.sql)
 
 ## Referências 
 * Criar conta gratuita https://azure.microsoft.com/en-us/free/
