@@ -26,9 +26,9 @@ Demo realizada no evento  [Brasilia Tech Conf 2019](https://www.meetup.com/pt-BR
 
 ## Instruções
 Instruções para execução da demo:
-* Provisionar Ambiente de Azure SQL Data Warehouse via [ARM Template](https://github.com/sidneyocirqueira/agb2019-uberlandia-devops-sqldb/tree/master/arm) com Power Shell;
-* Provisionar Ambiente Datafactory via [ARM Template](https://github.com/sidneyocirqueira/agb2019-uberlandia-devops-sqldb/tree/master/arm) com Power Shell
-* Provisionar VM SQL Server via [ARM Template](https://github.com/sidneyocirqueira/agb2019-uberlandia-devops-sqldb/tree/master/arm) com Power Shell;
+* Provisionar Ambiente de Azure SQL Data Warehouse;
+* Provisionar Ambiente Datafactory;
+* Provisionar VM SQL Server;
 
 ## Carga dados com Polybase
 * [Demo PolyBase bsb tech conf 2019.sql](https://github.com/sidneyocirqueira/bsbtechconf2019/blob/master/scripts/Demo%20PolyBase%20bsb%20tech%20conf%202019.sql)
