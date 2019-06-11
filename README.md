@@ -11,6 +11,7 @@ Demo realizada no evento  [Brasilia Tech Conf 2019](https://www.meetup.com/pt-BR
 * [Pré-Requisitos](#prerequisitos)
 * [Instruções](#instrucoes)
 * [Carregamento de dados](#cargadedadoscompolybase)
+* [Comunidades técnicas BSB](#comunidadestecnicasbsb)
 * [Referências](#referencias)
 
 ## Palestra
@@ -32,6 +33,11 @@ Instruções para execução da demo:
 
 ## Carga dados com Polybase
 * [Demo PolyBase bsb tech conf 2019.sql](https://github.com/sidneyocirqueira/bsbtechconf2019/blob/master/scripts/Demo%20PolyBase%20bsb%20tech%20conf%202019.sql)
+
+## Comunidades técnicas BSB
+* Developers BR: https://lnkd.in/evwvdWh
+* SQL Server DF: https://lnkd.in/eiCmmsh
+* BSB AI, Data Science, Big Data & Analytics: https://lnkd.in/eYjGS5a
 
 ## Referências 
 * Criar conta gratuita https://azure.microsoft.com/en-us/free/
